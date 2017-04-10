@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MLAlbumImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IwY-Ym-LCA">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypJ-C4-0St">
+                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RJv-dr-BuG"/>
+                            <constraint firstAttribute="width" constant="40" id="hJ4-Te-Pxa"/>
+                        </constraints>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ypJ-C4-0St" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6sh-bU-Ld6"/>
+                <constraint firstItem="IwY-Ym-LCA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7qX-k8-NtG"/>
+                <constraint firstAttribute="trailing" secondItem="ypJ-C4-0St" secondAttribute="trailing" id="Q51-cz-cWj"/>
+                <constraint firstAttribute="bottom" secondItem="IwY-Ym-LCA" secondAttribute="bottom" id="VtX-tS-xB9"/>
+                <constraint firstAttribute="trailing" secondItem="IwY-Ym-LCA" secondAttribute="trailing" id="dFk-10-gRT"/>
+                <constraint firstItem="IwY-Ym-LCA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xny-cB-bbb"/>
+            </constraints>
+            <size key="customSize" width="50" height="53"/>
+            <connections>
+                <outlet property="closeButton" destination="ypJ-C4-0St" id="kgq-Pc-18J"/>
+                <outlet property="coverImageView" destination="IwY-Ym-LCA" id="IdG-Ab-qSV"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="50.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
